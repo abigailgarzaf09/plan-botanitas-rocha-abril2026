@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de Marketing — Botanitas Rocha · Abril 2025</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  
+  :root {
+    --gold: #D4900A;
+    --gold-light: #FDF6E3;
+    --dark: #111111;
+    --gray: #F4F4F4;
+    --gray2: #E8E8E8;
+    --text: #222222;
+    --muted: #777777;
+    --white: #FFFFFF;
+    --reel: #F5E0EC;
+    --reel-text: #72243E;
+    --foto: #E2EEF9;
+    --foto-text: #0C447C;
+    --duo: #FDF0D5;
+    --duo-text: #633806;
+    --inspo: #DCF0E5;
+    --inspo-text: #085041;
+    --futbol: #E8F5E9;
+    --futbol-text: #1B5E20;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #F7F7F5;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: var(--dark);
+    padding: 40px 0 32px;
+    text-align: center;
+    border-bottom: 4px solid var(--gold);
+  }
+  .site-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -0.5px;
+  }
+  .site-header .sub {
+    font-size: 14px;
+    color: #AAAAAA;
+    margin-top: 6px;
+  }
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .stat {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    min-width: 110px;
+  }
+  .stat-val { font-size: 22px; font-weight: 700; color: var(--gold); }
+  .stat-label { font-size: 11px; color: #BBBBBB; margin-top: 2px; }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+  /* ── SECTIONS ── */
+  .section { margin: 40px 0; }
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gold-light);
+  }
+  .block-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 10px;
+  }
+  .body-text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.75;
+    margin-bottom: 12px;
+  }
+
+  /* ── PILARES ── */
+  .pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .pilar {
+    background: var(--white);
+    border: 1px solid var(--gray2);
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .pilar-icon { font-size: 24px; margin-bottom: 8px; }
+  .pilar-name { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+  .pilar-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* ── FORMULA ── */
+  .formula-steps { display: flex; flex-direction: column; gap: 0; }
+  .formula-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--gray2);
+  }
+  .formula-step:last-child { border-bottom: none; }
+  .step-num {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--dark);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .step-body { flex: 1; }
+  .step-title { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 2px; }
+  .step-desc { font-size: 13px; color: #555; }
+  .step-example { font-size: 12px; color: var(--muted); margin-top: 4px; font-style: italic; }
+
+  /* ── SEMANA CARD ── */
+  .week-block { margin-bottom: 32px; }
+  .week-header {
+    background: var(--dark);
+    border-radius: 12px 12px 0 0;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .week-num-badge {
+    background: var(--gold);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  .week-title-text { font-size: 16px; font-weight: 700; color: var(--white); }
+  .week-sub-text { font-size: 12px; color: #BBBBBB; margin-top: 2px; }
+  .week-dates {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gold);
+    background: rgba(212,144,10,0.15);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  .posts-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: 0 0 12px 12px; overflow: hidden; border: 1px solid var(--gray2); border-top: none; }
+  .posts-table tr:not(:last-child) td { border-bottom: 1px solid var(--gray2); }
+  .post-day-cell {
+    width: 80px;
+    padding: 16px 12px;
+    vertical-align: top;
+    background: var(--gray);
+    text-align: center;
+    border-right: 1px solid var(--gray2);
+  }
+  .post-day { font-size: 13px; font-weight: 700; color: var(--dark); }
+  .post-date { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .post-content-cell { padding: 16px 20px; vertical-align: top; }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+  }
+  .tag-reel { background: var(--reel); color: var(--reel-text); }
+  .tag-foto { background: var(--foto); color: var(--foto-text); }
+  .tag-duo { background: var(--duo); color: var(--duo-text); }
+  .tag-inspo { background: var(--inspo); color: var(--inspo-text); }
+  .tag-futbol { background: var(--futbol); color: var(--futbol-text); }
+  .post-title { font-size: 15px; font-weight: 700; color: var(--dark); margin-bottom: 5px; }
+  .post-desc { font-size: 13px; color: #555; line-height: 1.6; }
+  .guion {
+    margin-top: 10px;
+    background: #F9F9F7;
+    border: 1px solid var(--gray2);
+    border-left: 3px solid var(--gold);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .guion-label { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .guion-line { font-size: 13px; color: #444; line-height: 1.65; }
+  .guion-line b { color: var(--dark); }
+  .post-cta {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gold);
+  }
+  .post-cta::before { content: "→ "; }
+
+  /* ── PARTIDO HIGHLIGHT ── */
+  .partido-row {
+    background: #F0FFF4;
+    border: 1px solid #A5D6A7;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1B5E20;
+    font-weight: 500;
+  }
+  .partido-row span { font-weight: 700; }
+
+  /* ── STORIES ── */
+  .stories-section { background: var(--white); border: 1px solid var(--gray2); border-radius: 12px; overflow: hidden; }
+  .stories-header {
+    background: var(--dark);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .stories-header-title { font-size: 15px; font-weight: 700; color: var(--white); }
+  .stories-header-sub { font-size: 12px; color: #BBBBBB; }
+
+  .day-stories { border-bottom: 1px solid var(--gray2); }
+  .day-stories:last-child { border-bottom: none; }
+  .day-label {
+    padding: 10px 20px;
+    background: var(--gray);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--dark);
+    border-bottom: 1px solid var(--gray2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .day-label .partido-badge {
+    background: #A5D6A7;
+    color: #1B5E20;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 700;
+  }
+  .story-items { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .story-item {
+    padding: 12px 16px;
+    border-right: 1px solid var(--gray2);
+    position: relative;
+  }
+  .story-item:last-child { border-right: none; }
+  .story-num {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--dark);
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 6px;
+  }
+  .story-time { font-size: 10px; font-weight: 700; color: var(--gold); margin-bottom: 4px; }
+  .story-title-s { font-size: 13px; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
+  .story-desc-s { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  /* ── OBJETIVOS TABLE ── */
+  .obj-table { width: 100%; border-collapse: collapse; border-radius: 12px; overflow: hidden; border: 1px solid var(--gray2); }
+  .obj-table thead tr { background: var(--dark); }
+  .obj-table thead th { padding: 12px 16px; font-size: 12px; font-weight: 700; color: var(--white); text-align: left; }
+  .obj-table tbody tr:nth-child(odd) { background: var(--white); }
+  .obj-table tbody tr:nth-child(even) { background: var(--gray); }
+  .obj-table td { padding: 12px 16px; font-size: 13px; color: var(--text); border-bottom: 1px solid var(--gray2); }
+  .obj-table td:first-child { font-weight: 700; color: var(--gold); width: 32px; }
+
+  /* ── METRICAS ── */
+  .metricas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .metrica-card {
+    background: var(--white);
+    border: 1px solid var(--gray2);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .metrica-icon { font-size: 24px; flex-shrink: 0; }
+  .metrica-title { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
+  .metrica-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* ── REGLAS ── */
+  .reglas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+  .regla {
+    background: var(--white);
+    border: 1px solid var(--gray2);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .regla-title { font-size: 13px; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
+  .regla-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* ── VIDEO HIJA ── */
+  .hija-card {
+    background: var(--white);
+    border: 2px solid var(--gold);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .hija-header {
+    background: var(--gold);
+    padding: 14px 20px;
+  }
+  .hija-header-title { font-size: 16px; font-weight: 800; color: var(--white); }
+  .hija-header-sub { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 2px; }
+  .hija-body { padding: 20px; }
+  .hija-row { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--gray2); }
+  .hija-row:last-child { border-bottom: none; }
+  .hija-label { font-size: 12px; font-weight: 700; color: var(--muted); min-width: 100px; flex-shrink: 0; }
+  .hija-val { font-size: 13px; color: var(--text); }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    background: var(--dark);
+    border-top: 4px solid var(--gold);
+    padding: 28px 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .site-footer p { font-size: 13px; color: #888; }
+  .site-footer strong { color: var(--gold); }
+
+  /* ── LEGEND ── */
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .leg { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--muted); }
+  .leg-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+
+  /* ── EDITABLE ── */
+  [contenteditable] { outline: none; }
+  [contenteditable]:hover { background: rgba(212,144,10,0.06); border-radius: 4px; }
+  [contenteditable]:focus { background: rgba(212,144,10,0.1); border-radius: 4px; box-shadow: 0 0 0 2px rgba(212,144,10,0.3); }
+  .edit-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: #111; border-bottom: 2px solid var(--gold);
+    padding: 10px 20px; display: flex; align-items: center;
+    justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  .edit-bar-left { display: flex; align-items: center; gap: 10px; }
+  .edit-indicator { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #BBBBBB; font-family: 'Inter', sans-serif; }
+  .edit-dot { width: 8px; height: 8px; border-radius: 50%; background: #4CAF50; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  .edit-bar-btns { display: flex; gap: 8px; }
+  .ebtn {
+    padding: 7px 16px; border-radius: 8px; font-size: 12px; font-weight: 700;
+    cursor: pointer; border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08); color: #fff;
+    font-family: 'Inter', sans-serif; transition: all 0.15s;
+  }
+  .ebtn:hover { background: rgba(255,255,255,0.15); }
+  .ebtn-gold { background: var(--gold); border-color: var(--gold); color: #fff; }
+  .ebtn-gold:hover { opacity: 0.85; }
+  .saved-msg { font-size: 11px; color: #4CAF50; opacity: 0; transition: opacity 0.3s; font-family: 'Inter', sans-serif; }
+  .saved-msg.show { opacity: 1; }
+
+  @media (max-width: 600px) {
+    .story-items { grid-template-columns: 1fr; }
+    .story-item { border-right: none; border-bottom: 1px solid var(--gray2); }
+    .story-item:last-child { border-bottom: none; }
+    .week-header { flex-direction: column; align-items: flex-start; }
+    .stats-row { gap: 8px; }
+    .stat { min-width: 90px; padding: 10px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<div class="edit-bar">
+  <div class="edit-bar-left">
+    <div class="edit-indicator"><div class="edit-dot"></div>Modo edición activo — haz clic en cualquier texto para editar</div>
+    <span class="saved-msg" id="saved-msg">✓ Guardado</span>
+  </div>
+  <div class="edit-bar-btns">
+    <button class="ebtn" onclick="resetPage()">Restablecer</button>
+    <button class="ebtn ebtn-gold" onclick="downloadHTML()">Descargar HTML ↗</button>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <h1>🔥 Botanitas Rocha</h1>
+    <p class="sub">Plan de Marketing Digital · Abril 2025 · Apodaca, Nuevo León</p>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-val" contenteditable="true">12</div><div class="stat-label" contenteditable="true">Posts al mes</div></div>
+      <div class="stat"><div class="stat-val" contenteditable="true">~90</div><div class="stat-label" contenteditable="true">Stories al mes</div></div>
+      <div class="stat"><div class="stat-val" contenteditable="true">2</div><div class="stat-label" contenteditable="true">Videos con ellos</div></div>
+      <div class="stat"><div class="stat-val" contenteditable="true">3</div><div class="stat-label" contenteditable="true">Formatos inspo</div></div>
+      <div class="stat"><div class="stat-val" contenteditable="true">2</div><div class="stat-label" contenteditable="true">Partidos futbol</div></div>
+    </div>
+  </div>
+</header>
+
+<div id="main-content"><div class="container" style="padding-top: 48px; padding-bottom: 60px;">
+
+  <!-- DIAGNÓSTICO -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">01 · Diagnóstico</div>
+    <div class="block-title" contenteditable="true">¿Por qué no han subido las ventas?</div>
+    <p class="body-text" contenteditable="true">Un año publicando con consistencia, mezclando fotos, reels, promos y memes. Los pedidos bajaron de todas formas. El problema no fue la cantidad ni el formato: fue el destino del contenido. Cada post terminaba en un like, no en una visita al local, un pedido por WhatsApp o una orden en Uber Eats.</p>
+    <p class="body-text" contenteditable="true">Este plan cambia una sola cosa, pero es la más importante: <strong>cada pieza de contenido tiene un camino claro hacia la venta</strong>, ya sea visitar el local, pedir por WhatsApp o abrir Uber Eats.</p>
+  </div>
+
+  <!-- OBJETIVOS -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">02 · Objetivos del mes</div>
+    <table class="obj-table">
+      <thead><tr><th>#</th><th>Objetivo</th><th>Indicador de éxito</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td><strong>Aumentar visitas al local y pedidos</strong> (WhatsApp + Uber Eats)</td><td>Más pedidos vs mes anterior</td></tr>
+        <tr><td>2</td><td><strong>Humanizar la marca</strong> con ella y su esposo en cámara</td><td>2 videos publicados</td></tr>
+        <tr><td>3</td><td><strong>Posicionar las salsas caseras</strong> como identidad única</td><td>Al menos 2 posts dedicados a salsas</td></tr>
+        <tr><td>4</td><td><strong>Aprovechar el Día del Niño</strong> (30 de abril) con el video de la hija</td><td>Reel publicado el 28–30 de abril</td></tr>
+        <tr><td>5</td><td><strong>Promover combo godín</strong> válido hasta las 5pm en días de semana</td><td>Mínimo 4 menciones en el mes</td></tr>
+        <tr><td>6</td><td><strong>Posicionar como punto para ver partidos</strong> de Tigres y Rayados</td><td>2 posts/stories de fútbol publicados</td></tr>
+        <tr><td>7</td><td><strong>Identificar el formato inspo que más convierte</strong></td><td>El ganador se fija para mayo</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PILARES -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">03 · Pilares de contenido</div>
+    <div class="pilares-grid">
+      <div class="pilar">
+        <div class="pilar-icon">🔥</div>
+        <div class="pilar-name" contenteditable="true">Antojo directo</div>
+        <div class="pilar-desc" contenteditable="true">Primer plano, dipeo en salsa, queso derritiéndose. Para el scroll y genera ganas de pedir ahora.</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">🏆</div>
+        <div class="pilar-name" contenteditable="true">Prueba social</div>
+        <div class="pilar-desc" contenteditable="true">Reviews de Google, menciones, pedidos reales. Convierte dudas en visitas y pedidos.</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">🫙</div>
+        <div class="pilar-name" contenteditable="true">Salsas = identidad</div>
+        <div class="pilar-desc" contenteditable="true">Lo que nadie más tiene en Apodaca. Cada salsa es un personaje con su propia historia.</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">👫</div>
+        <div class="pilar-name" contenteditable="true">Ellos dos</div>
+        <div class="pilar-desc" contenteditable="true">La gente le compra a personas, no a logos. Humanizar la marca genera confianza y lealtad.</div>
+      </div>
+      <div class="pilar">
+        <div class="pilar-icon">⚽</div>
+        <div class="pilar-name" contenteditable="true">Punto de encuentro</div>
+        <div class="pilar-desc" contenteditable="true">Ver los partidos de Tigres y Rayados en el local. Contenido que atrae visitas en días de partido.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FÓRMULA -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">04 · Fórmula de cada post</div>
+    <p class="body-text" contenteditable="true">Cada post, reel y story sigue estos 4 pasos. Si falta uno, no se publica:</p>
+    <div style="background: var(--white); border: 1px solid var(--gray2); border-radius: 12px; padding: 20px 24px;">
+      <div class="formula-steps">
+        <div class="formula-step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title" contenteditable="true">Hook visual (0–2 seg)</div>
+            <div class="step-desc" contenteditable="true">El primer frame detiene el scroll. Sin intro, sin logo, directo al producto.</div>
+            <div class="step-example" contenteditable="true">La salsa golpea el boneless en el primer cuadro, no al final.</div>
+          </div>
+        </div>
+        <div class="formula-step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title" contenteditable="true">Deseo (2–8 seg)</div>
+            <div class="step-desc" contenteditable="true">Mostrar el producto en su mejor momento. La comida habla sola.</div>
+            <div class="step-example" contenteditable="true">Toma del combo completo, queso derritiéndose, salsas en fila.</div>
+          </div>
+        </div>
+        <div class="formula-step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title" contenteditable="true">Razón para actuar ahora</div>
+            <div class="step-desc" contenteditable="true">Precio, promo del día, combo godín hasta las 5pm, "solo hoy". Sin urgencia no hay acción.</div>
+            <div class="step-example" contenteditable="true">"Combo Godín $145 — válido hasta las 5pm, solo de lunes a viernes."</div>
+          </div>
+        </div>
+        <div class="formula-step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title" contenteditable="true">CTA claro (siempre el mismo)</div>
+            <div class="step-desc" contenteditable="true">Visita el local, pide por WhatsApp o pídelo en Uber Eats. Uno solo por post.</div>
+            <div class="step-example" contenteditable="true">Número de WhatsApp o logo de Uber Eats los últimos 2 segundos del video.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CALENDARIO -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">05 · Calendario de contenido — Abril 2025</div>
+
+    <div class="legend">
+      <div class="leg"><div class="leg-dot" style="background:#D4537E"></div>Reel</div>
+      <div class="leg"><div class="leg-dot" style="background:#378ADD"></div>Foto / Canva</div>
+      <div class="leg"><div class="leg-dot" style="background:#EF9F27"></div>Video con ellos</div>
+      <div class="leg"><div class="leg-dot" style="background:#1D9E75"></div>Formato inspo</div>
+      <div class="leg"><div class="leg-dot" style="background:#388E3C"></div>Fútbol</div>
+    </div>
+
+    <!-- SEMANA 1 -->
+    <div class="week-block">
+      <div class="week-header">
+        <div>
+          <span class="week-num-badge">Semana 1</span>
+          <span class="week-title-text" contenteditable="true">Presentar quiénes son</span>
+          <div class="week-sub-text" contenteditable="true">Humanizar la marca desde el primer post</div>
+        </div>
+        <div class="week-dates" contenteditable="true">7 – 11 de abril</div>
+      </div>
+      <table class="posts-table">
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">LUN</div><div class="post-date" contenteditable="true">7 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-duo" contenteditable="true">👫 Video con ellos</span>
+            <div class="post-title" contenteditable="true">Somos Botanitas Rocha — La presentación</div>
+            <div class="post-desc" contenteditable="true">Reel de 20–25 seg frente al local o en la cocina. Natural, sin memorizar. Ella y su esposo hablan como si le contaran a un amigo. Mostrar la energía real del negocio y que está disponible en local, WhatsApp y Uber Eats.</div>
+            <div class="guion">
+              <div class="guion-label" contenteditable="true">Guión sugerido</div>
+              <div class="guion-line" contenteditable="true"><b>Ella:</b> "Si no sabes dónde comer rico en Apodaca, te lo resolvemos nosotros."</div>
+              <div class="guion-line" contenteditable="true"><b>Él:</b> "Boneless, burgers, alitas... y las salsas las hace ella en casa."</div>
+              <div class="guion-line" contenteditable="true"><b>Ella:</b> "¿Ya nos pediste? Estamos en el local, en WhatsApp y en Uber Eats 👇"</div>
+            </div>
+            <div class="post-cta" contenteditable="true">Número de WhatsApp + logo Uber Eats visibles al final</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">MIÉ</div><div class="post-date" contenteditable="true">9 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-inspo" contenteditable="true">🎬 Inspo #1</span>
+            <div class="post-title" contenteditable="true">Replicar formato inspo #1</div>
+            <div class="post-desc" contenteditable="true">Usar el primer reel de inspo como estructura base. Adaptar audio, texto y producto a Botanitas Rocha. Respetar el timing y los cortes del original. El producto es el protagonista.</div>
+            <div class="post-cta" contenteditable="true">El mismo CTA del video original, redirigido a visita al local o WhatsApp</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">VIE</div><div class="post-date" contenteditable="true">11 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-foto" contenteditable="true">Foto / Canva</span>
+            <div class="post-title" contenteditable="true">Review de Google — Tarjeta visual</div>
+            <div class="post-desc" contenteditable="true">El mejor review de Google diseñado en Canva. Fondo oscuro, 5 estrellas grandes, foto del plato mencionado, nombre del cliente. Prueba visual de que alguien real ya comió y quedó encantado.</div>
+            <div class="post-cta" contenteditable="true">¿Ya lo probaste? Visítanos o pídelo por WhatsApp / Uber Eats</div>
+          </td>
+        </tr>
+      </table>
+      <div class="partido-row" contenteditable="true">⚽ <span>Sáb 12 de abril — Clásico Regio: Tigres vs Rayados (19:00 hrs)</span> — Story el viernes 11: "Mañana el Clásico Regio, ¿con quién lo ves? Aquí lo ponemos en pantalla 🔥 Pide tu combo y ven al local."</div>
+    </div>
+
+    <!-- SEMANA 2 -->
+    <div class="week-block">
+      <div class="week-header">
+        <div>
+          <span class="week-num-badge">Semana 2</span>
+          <span class="week-title-text" contenteditable="true">Las salsas como diferenciador</span>
+          <div class="week-sub-text" contenteditable="true">Lo que nadie más tiene en Apodaca</div>
+        </div>
+        <div class="week-dates" contenteditable="true">14 – 18 de abril</div>
+      </div>
+      <table class="posts-table">
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">LUN</div><div class="post-date" contenteditable="true">14 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-reel" contenteditable="true">Reel</span>
+            <div class="post-title" contenteditable="true">Template CapCut — Combo Godín $145</div>
+            <div class="post-desc" contenteditable="true">El formato ganador: sonidos de impacto + reveal del precio. Esta semana destacar el Combo Godín. Mostrar las opciones: alitas, tenders, cheeseburger, crispy bacon panini, boneless o buffalo chicken burger + papas + refresco. Audio trending de esa semana.</div>
+            <div class="post-cta" contenteditable="true">Combo Godín $145 — válido hasta las 5pm lunes a viernes. Visítanos o pide por WhatsApp</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">MIÉ</div><div class="post-date" contenteditable="true">16 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-reel" contenteditable="true">Reel</span>
+            <div class="post-title" contenteditable="true">Conoce nuestras salsas — Una por una</div>
+            <div class="post-desc" contenteditable="true">Reel mostrando cada salsa en primer plano: color, textura, dipeo. Transiciones rápidas al ritmo del audio trending. Texto en pantalla con el nombre y nivel de picante de cada una. Sin proceso, solo el resultado terminado y lo apetitoso que se ve.</div>
+            <div class="post-cta" contenteditable="true">¿Cuál es la tuya? Pídela con tu orden — visítanos o WhatsApp en bio</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">VIE</div><div class="post-date" contenteditable="true">18 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-inspo" contenteditable="true">🎬 Inspo #2</span>
+            <div class="post-title" contenteditable="true">Replicar formato inspo #2</div>
+            <div class="post-desc" contenteditable="true">Segundo formato de inspo adaptado a Botanitas. Si el original tiene personas, puede salir ella. Si es de producto, la comida protagoniza. Mismo audio si sigue en trending.</div>
+            <div class="post-cta" contenteditable="true">CTA adaptado al formato, siempre terminando en visita o WhatsApp</div>
+          </td>
+        </tr>
+      </table>
+      <div class="partido-row" contenteditable="true">⚽ <span>Sáb 19 de abril — Tigres vs Pumas (21:00 hrs)</span> — Story el viernes 18: "Mañana Tigres juega, ¿ya tienes plan? Ven a verlo aquí con tus boneless y tu salsa favorita 🐯"</div>
+    </div>
+
+    <!-- SEMANA 3 -->
+    <div class="week-block">
+      <div class="week-header">
+        <div>
+          <span class="week-num-badge">Semana 3</span>
+          <span class="week-title-text" contenteditable="true">Conversión directa + ellos salen</span>
+          <div class="week-sub-text" contenteditable="true">El mejor formato hasta ahora + recomendación de los dueños</div>
+        </div>
+        <div class="week-dates" contenteditable="true">21 – 25 de abril</div>
+      </div>
+      <table class="posts-table">
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">LUN</div><div class="post-date" contenteditable="true">21 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-reel" contenteditable="true">Reel</span>
+            <div class="post-title" contenteditable="true">Así llega tu pedido — Unboxing real</div>
+            <div class="post-desc" contenteditable="true">Grabar cómo se empaca y sale un pedido de delivery. Sin actuación, sin edición elaborada. Mostrar que la comida llega bien presentada. Ese video elimina la duda de quien nunca ha pedido a domicilio y muestra la calidad del servicio.</div>
+            <div class="post-cta" contenteditable="true">El tuyo puede estar listo en minutos — WhatsApp en bio o pídelo en Uber Eats</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">MIÉ</div><div class="post-date" contenteditable="true">23 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-duo" contenteditable="true">👫 Video con ellos</span>
+            <div class="post-title" contenteditable="true">Nuestro favorito del menú — Recomendación honesta</div>
+            <div class="post-desc" contenteditable="true">Cada uno recomienda su platillo favorito y explica por qué. Hablar natural, sin guión elaborado. Terminar mostrando los dos platillos en cámara. Una recomendación genuina de los dueños genera más confianza que cualquier anuncio.</div>
+            <div class="guion">
+              <div class="guion-label" contenteditable="true">Guión sugerido</div>
+              <div class="guion-line" contenteditable="true"><b>Ella:</b> "Mi favorito son los boneless con La Rocha. No me los cambies."</div>
+              <div class="guion-line" contenteditable="true"><b>Él:</b> "Yo me voy siempre con la burger doble. Sin pensarlo."</div>
+              <div class="guion-line" contenteditable="true"><b>Ella:</b> "¿Cuál es el tuyo? Ven a probarlo — o pídelo por WhatsApp y Uber Eats 👇"</div>
+            </div>
+            <div class="post-cta" contenteditable="true">Visítanos en Apodaca · WhatsApp en bio · Uber Eats disponible</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">VIE</div><div class="post-date" contenteditable="true">25 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-foto" contenteditable="true">Foto / Canva</span>
+            <div class="post-title" contenteditable="true">Flat lay del combo fin de semana</div>
+            <div class="post-desc" contenteditable="true">Foto cenital del combo más pedido sobre el tablero ajedrez. Luz cálida, bien presentado. Copy directo: nombre del combo, precio y destino para pedirlo. Sin texto de más. La foto hace el trabajo.</div>
+            <div class="post-cta" contenteditable="true">Pídelo este finde — visítanos, WhatsApp en bio o Uber Eats</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- SEMANA 4 -->
+    <div class="week-block">
+      <div class="week-header">
+        <div>
+          <span class="week-num-badge">Semana 4</span>
+          <span class="week-title-text" contenteditable="true">Día del Niño + cierre fuerte</span>
+          <div class="week-sub-text" contenteditable="true">El video más viral del mes y prueba social de cierre</div>
+        </div>
+        <div class="week-dates" contenteditable="true">28 – 30 de abril</div>
+      </div>
+      <table class="posts-table">
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">LUN</div><div class="post-date" contenteditable="true">28 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-inspo" contenteditable="true">🎬 Inspo #3</span>
+            <div class="post-title" contenteditable="true">Replicar formato inspo #3</div>
+            <div class="post-desc" contenteditable="true">Tercer formato de inspo. Si alguno de los anteriores generó más visitas o mensajes, repetir ese estilo con producto diferente. Si no, probar el tercero de la lista. El que más jale se convierte en formato fijo de mayo.</div>
+            <div class="post-cta" contenteditable="true">CTA adaptado al formato, siempre terminando en visita o WhatsApp</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">MIÉ</div><div class="post-date" contenteditable="true">30 abr</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-reel" contenteditable="true">Reel ⭐ El más importante del mes</span>
+            <div class="post-title" contenteditable="true">🧒 Día del Niño — La hija de Botanitas al rescate</div>
+            <div class="post-desc" contenteditable="true">Reel protagonizado por la hija. Historia: le quisieron cobrar millones de pesos por hacer un video review del restaurante, y ella dijo "no te preocupes mamá, yo te ayudo". Habla del restaurante, la comida, por qué le gusta. Natural, espontáneo, divertido. Es el video más humano y memorable del mes — alto potencial de viralidad.</div>
+            <div class="guion">
+              <div class="guion-label" contenteditable="true">Guión sugerido — no ensayar demasiado, que sea natural</div>
+              <div class="guion-line" contenteditable="true"><b>Hija:</b> "Le quisieron cobrar a mi mamá muchos millones de pesos por hacer un video review de su restaurante..."</div>
+              <div class="guion-line" contenteditable="true"><b>Hija:</b> "Y yo le dije: no te preocupes mamá, yo te ayudo."</div>
+              <div class="guion-line" contenteditable="true"><b>Hija habla:</b> su comida favorita del menú, las salsas que le gustan, por qué recomienda ir.</div>
+              <div class="guion-line" contenteditable="true"><b>Cierre:</b> mamá aparece, la abraza. Número de WhatsApp en pantalla. Texto: "Feliz Día del Niño 🎉"</div>
+            </div>
+            <div class="post-cta" contenteditable="true">Feliz Día del Niño — visítanos, pide por WhatsApp o en Uber Eats</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="post-day-cell" contenteditable="true"><div class="post-day" contenteditable="true">VIE*</div><div class="post-date" contenteditable="true">1 may</div></td>
+          <td class="post-content-cell">
+            <span class="tag tag-foto" contenteditable="true">Carrusel Canva</span>
+            <div class="post-title" contenteditable="true">Review + CTA — Cierre del mes</div>
+            <div class="post-desc" contenteditable="true">Carrusel de 2 slides. Slide 1: foto del plato + texto del review encima en Canva, fondo oscuro, 5 estrellas. Slide 2: "¿Quieres ser el próximo?" + número de WhatsApp grande, logo de Uber Eats y dirección del local.</div>
+            <div class="post-cta" contenteditable="true">Número de WhatsApp en slide 2 + Uber Eats + dirección — imposible no verlos</div>
+          </td>
+        </tr>
+      </table>
+      <p style="font-size: 12px; color: var(--muted); margin-top: 8px; font-style: italic;">* Si el video del Día del Niño se publica el 30, el carrusel se mueve al viernes 1 de mayo como primer post de mayo.</p>
+    </div>
+  </div>
+
+  <!-- STORIES -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">06 · Plan de historias — Todo el mes (3 diarias)</div>
+    <p class="body-text" style="margin-bottom: 16px;" contenteditable="true">Stories dinámicas todos los días, 3 por día. Nunca se repite el mismo tipo. Lunes, martes y miércoles siempre arrancan con la promo del día. Sábados incluidos.</p>
+
+    <div class="stories-section">
+      <div class="stories-header">
+        <div>
+          <div class="stories-header-title" contenteditable="true">Stories diarias — Abril 2025</div>
+          <div class="stories-header-sub" contenteditable="true">Story 1: 12:00pm · Story 2: 2:00–3:00pm · Story 3: 7:00–8:00pm</div>
+        </div>
+      </div>
+
+      <!-- LUN 7 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Lunes 7 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del lunes — arranca la semana</div><div class="story-desc-s" contenteditable="true">"Lunes de combo: [platillo] [precio] — solo hoy. Pide por WhatsApp o visítanos." Foto del plato con precio grande en pantalla.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">🗳 Poll: ¿qué salsa eres tú?</div><div class="story-desc-s" contenteditable="true">Encuesta: "La Negrita (pica mucho)" vs "La Rocha (suavecita)". La ganadora se promo mañana. Sticker de encuesta de Instagram.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">😂 Meme de lunes + comida</div><div class="story-desc-s" contenteditable="true">Adaptar meme trending de la semana: "los lunes duelen menos con Botanitas". Texto en pantalla, fondo oscuro, audio viral de ese momento.</div></div>
+        </div>
+      </div>
+
+      <!-- MAR 8 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Martes 8 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del martes — hoy toca [platillo]</div><div class="story-desc-s" contenteditable="true">"Martes de [platillo] a [precio] — válido solo hoy. Link en bio o WhatsApp 👇" Video corto del platillo en primer plano.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">⭐ Review en tiempo real</div><div class="story-desc-s" contenteditable="true">La salsa ganadora del poll de ayer + review de Google. "¿Ya la pediste? Aquí está su reseña ⭐⭐⭐⭐⭐" Subir el mismo día que llegue.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">💬 ¿Qué se te antoja ahorita?</div><div class="story-desc-s" contenteditable="true">"Si pudieras pedir UNA cosa de Botanitas ahora mismo, ¿cuál sería?" Sticker de pregunta abierta. Responder a todos en DMs.</div></div>
+        </div>
+      </div>
+
+      <!-- MIE 9 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Miércoles 9 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🚨 Promo del miércoles — último día</div><div class="story-desc-s" contenteditable="true">"Miércoles de [platillo] a [precio] — hoy es el último día de promos de la semana." Countdown sticker hasta hora de cierre.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:30pm</div><div class="story-title-s" contenteditable="true">🎬 Detrás de las salsas</div><div class="story-desc-s" contenteditable="true">Video 10–15 seg de las salsas listas en sus recipientes. Sin revelar receta. "Hechas en casa, desde siempre." No mostrar proceso, solo el resultado.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">🛵 ¿No puedes salir? Te llevamos</div><div class="story-desc-s" contenteditable="true">"Delivery disponible — pide por WhatsApp o búscanos en Uber Eats. Te llevamos a donde estés." Captura de Uber Eats o foto de pedido empacado.</div></div>
+        </div>
+      </div>
+
+      <!-- JUE 10 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Jueves 10 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🗳 ¿Qué quieres ver este fin de semana?</div><div class="story-desc-s" contenteditable="true">Poll entre 2 platillos para el finde. El ganador se destaca en el post del viernes. Usar fotos reales como fondo del sticker.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">📱 Tendencia de la semana adaptada</div><div class="story-desc-s" contenteditable="true">Tomar el formato trending de IG/TikTok esa semana y adaptarlo con la comida de Botanitas. Revisar Reels más virales del momento.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">🌶 Close-up de la salsa ganadora del poll</div><div class="story-desc-s" contenteditable="true">Video lento de la salsa ganadora del lunes en primer plano, dipeo. Sin palabras. Solo el sonido y la salsa. Buena luz, primer plano total.</div></div>
+        </div>
+      </div>
+
+      <!-- VIE 11 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Viernes 11 de abril — Víspera Clásico Regio ⚽</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">⚽ Clásico Regio mañana — promo especial</div><div class="story-desc-s" contenteditable="true">"Tigres vs Rayados mañana a las 7pm — ven a verlo aquí con tu combo favorito. Reserva tu lugar 🔥" Fondo con colores de los equipos + precio.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">🗳 ¿Con quién vas? Tigres o Rayados</div><div class="story-desc-s" contenteditable="true">Poll: "¿Eres de Tigres o de Rayados?" La ganadora se celebra con promo especial durante el partido. Alto engagement garantizado en Monterrey.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">🛵 Pide para el partido desde tu casa</div><div class="story-desc-s" contenteditable="true">"¿No puedes venir al local? Pídenos por Uber Eats y ve el partido desde tu casa con la mejor comida." Captura del menú en Uber Eats.</div></div>
+        </div>
+      </div>
+
+      <!-- SAB 12 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Sábado 12 de abril — Clásico Regio: Tigres vs Rayados 🐯⚽</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">📸 Ambiente del partido en el local</div><div class="story-desc-s" contenteditable="true">Video o foto del local durante el partido. Gente viendo, pantalla, comida en mesa. "Esto es Botanitas en día de partido 🐯⚽" Grabar el ambiente real, sin actuación.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">5:00pm</div><div class="story-title-s" contenteditable="true">👑 El combo más pedido del partido</div><div class="story-desc-s" contenteditable="true">Foto del combo más vendido hoy. "Este fue el rey de hoy 👑 ¿Lo pediste?" + WhatsApp. Foto real durante o al final del partido.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">9:00pm</div><div class="story-title-s" contenteditable="true">😂 ¿Cómo quedó tu equipo?</div><div class="story-desc-s" contenteditable="true">Story de reacción post-partido. "¿Festejando o llorando? Cuéntanos 😂⚽" Sticker de pregunta abierta. Publicar justo al terminar el partido.</div></div>
+        </div>
+      </div>
+
+      <!-- LUN 14 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Lunes 14 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del lunes — semana 2</div><div class="story-desc-s" contenteditable="true">"Lunes de [platillo] a [precio] — arranca la semana con todo. Solo hoy, pide por WhatsApp o visítanos." Template CapCut con reveal del precio.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">1:30pm</div><div class="story-title-s" contenteditable="true">🗳 Combo Godín — ¿cuál eliges?</div><div class="story-desc-s" contenteditable="true">"Combo Godín $145 válido hasta las 5pm — elige: alitas, tenders, cheeseburger, panini, boneless o buffalo chicken burger + papas + refresco. ¿Cuál es tu pick?"</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">📱 Trend de la semana: versión Botanitas</div><div class="story-desc-s" contenteditable="true">El formato viral de esa semana adaptado con producto de Botanitas. Audio trending, texto corto, impacto visual. Revisar qué está pegando en IG.</div></div>
+        </div>
+      </div>
+
+      <!-- MAR 15 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Martes 15 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del martes</div><div class="story-desc-s" contenteditable="true">"Martes de [platillo] a [precio] — solo hoy y solo mientras hay. No te quedes con el antojo 😤" Sticker de countdown si termina a hora específica.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">🙌 Mención de cliente — repost</div><div class="story-desc-s" contenteditable="true">Si alguien etiquetó a Botanitas esta semana, repostearlo con "¡Gracias, nos encanta verte! 🙌" Si no, screenshot de review de Google. Siempre agradecer públicamente.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">🌶 ASMR visual — dipeo en salsa</div><div class="story-desc-s" contenteditable="true">Video 8–10 seg de boneless o tender dipeando en La Negrita o La Rocha. Sin texto. Solo el sonido. Primer plano total, luz cálida, sin narración.</div></div>
+        </div>
+      </div>
+
+      <!-- MIE 16 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Miércoles 16 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🚨 Último día de promos — miércoles</div><div class="story-desc-s" contenteditable="true">"Hoy es el último día de promos de la semana 🚨 [platillo] a [precio]. Aprovecha antes de que se acabe." Countdown sticker con hora de cierre.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">🗳 ¿Cuál salsa va con qué platillo?</div><div class="story-desc-s" contenteditable="true">"¿Con qué combinarías La Rocha? A) Alitas B) Burger. No hay respuesta incorrecta 😄" Dos fotos como fondo de las opciones.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">🎬 La cocina antes del rush</div><div class="story-desc-s" contenteditable="true">Video 10 seg de la cocina lista para el servicio. Salsas en fila, platillos preparados. "Así arrancamos cada día." Grabar antes del mediodía.</div></div>
+        </div>
+      </div>
+
+      <!-- JUE 17 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Jueves 17 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🗳 ¿Qué se te antoja este fin de semana?</div><div class="story-desc-s" contenteditable="true">Poll entre dos opciones para el finde. El más votado se destaca en el post del viernes. Usar fotos reales de los platillos como fondo del poll.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">🛵 Ubícanos en Uber Eats</div><div class="story-desc-s" contenteditable="true">"¿Sabías que también puedes pedirnos en Uber Eats? Búscanos como Botanitas Rocha 🛵" + captura de la app con buena calificación visible.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">📱 Esto vs esto — Botanitas edition</div><div class="story-desc-s" contenteditable="true">"Burger vs Boneless — ¿con cuál te quedas? 🤔" Dos fotos lado a lado, texto trending, poll al final. Usar sonido viral si está en tendencia.</div></div>
+        </div>
+      </div>
+
+      <!-- VIE 18 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Viernes 18 de abril — Víspera Tigres vs Pumas 🐯</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">⚽ Tigres vs Pumas mañana — ven al local</div><div class="story-desc-s" contenteditable="true">"Mañana Tigres vs Pumas a las 9pm — ven a verlo aquí. Pide tu combo y reserva tu lugar 🐯" Fondo con colores de Tigres.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">💬 ¿Cuántos boneless eres capaz de comerte?</div><div class="story-desc-s" contenteditable="true">"Dinos tu número 👇 El que llegue más alto gana nuestra admiración 😂" Sticker de pregunta abierta. Responder cada respuesta para generar conversación.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">🍔 El platillo ganador del poll del jueves</div><div class="story-desc-s" contenteditable="true">Foto o video del platillo más votado. "Este fue el que eligieron — ¿lo pediste ya para el finde?" + link de WhatsApp en la story.</div></div>
+        </div>
+      </div>
+
+      <!-- SAB 19 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Sábado 19 de abril — Tigres vs Pumas 🐯</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">1:00pm</div><div class="story-title-s" contenteditable="true">🍔 Sábado de antojos — ¿ya pediste?</div><div class="story-desc-s" contenteditable="true">"Es sábado. Tienes hambre. Sabes lo que tienes que hacer 🍔🔥" + foto del combo + WhatsApp y Uber Eats. Copy directo, sin rodeos.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">4:00pm</div><div class="story-title-s" contenteditable="true">📦 Pedido en tiempo real</div><div class="story-desc-s" contenteditable="true">Foto de un pedido listo para salir a delivery. "Este ya va en camino — ¿el tuyo?" + número de WhatsApp. Foto auténtica, sin edición elaborada.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">🎢 Rating del sábado</div><div class="story-desc-s" contenteditable="true">"Del 1 al 10, ¿cómo estuvo tu semana? 🎢 Nosotros te ayudamos a cerrarla bien 🍗" Sticker de slider. Responder a cada quien con una sugerencia de platillo.</div></div>
+        </div>
+      </div>
+
+      <!-- LUN 21 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Lunes 21 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del lunes — semana 3</div><div class="story-desc-s" contenteditable="true">"Nueva semana, nuevo lunes de [platillo] a [precio] 🔥 Solo hoy. Pide en local, WhatsApp o Uber Eats." Video corto del platillo + precio en pantalla.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">📱 POV: ya pediste tu Botanitas</div><div class="story-desc-s" contenteditable="true">"POV: ya pediste y estás esperando tu order 😤🍔" Video corto o imagen con texto trending. Audio viral. Formato POV siempre en tendencia en comida.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">🛵 Delivery nocturno disponible</div><div class="story-desc-s" contenteditable="true">"¿Noche de película? Pídenos por WhatsApp o Uber Eats — llegamos a donde estés 🛵🎬" Copy relajado y casual para la noche.</div></div>
+        </div>
+      </div>
+
+      <!-- MAR 22 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Martes 22 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del martes — semana 3</div><div class="story-desc-s" contenteditable="true">"Martes de [platillo] a [precio] — sin pretextos, sin excusas 😤 Solo hoy." Sticker de countdown si aplica.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">💬 ¿Qué le pondrías más a tu burger?</div><div class="story-desc-s" contenteditable="true">"Diseña tu burger ideal 🍔 — dinos qué ingrediente extra le agregarías. El más votado podría ser especial de la semana." Sticker de pregunta abierta.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">⭐ Review de Google de la semana</div><div class="story-desc-s" contenteditable="true">Diseño Canva con el review más reciente. Fondo oscuro, 5 estrellas, nombre del platillo. "Esto nos dijeron esta semana 🙏" Subir el mismo día que llegue.</div></div>
+        </div>
+      </div>
+
+      <!-- MIE 23 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Miércoles 23 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🚨 Último día de promos — cierre con todo</div><div class="story-desc-s" contenteditable="true">"Último miércoles de promos del mes 🚨 [platillo] a [precio] — hoy o nunca." Urgencia real, countdown sticker.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:30pm</div><div class="story-title-s" contenteditable="true">🎬 Así se arma un pedido de delivery</div><div class="story-desc-s" contenteditable="true">Video 10–15 seg del proceso de empacar un pedido real. "Así cuidamos tu orden hasta que llega a ti 🛵" Grabar un pedido real siendo empacado.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">👑 El platillo más pedido de la semana</div><div class="story-desc-s" contenteditable="true">"Este fue el rey de la semana 👑 ¿Lo pediste? WhatsApp y Uber Eats disponibles." Foto del platillo más vendido de esos días.</div></div>
+        </div>
+      </div>
+
+      <!-- JUE 24 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Jueves 24 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">👀 Teaser Día del Niño — ¿adivinas?</div><div class="story-desc-s" contenteditable="true">"El 30 de abril publicamos algo que NUNCA hemos hecho. ¿Puedes adivinar? 👀" Sticker de pregunta. Generar expectativa sin revelar el video de la hija.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">📱 Formato "si quieres X, consíguete un Y"</div><div class="story-desc-s" contenteditable="true">"Si quieres pasar un buen rato, consíguete unos boneless de Botanitas con La Negrita 🌶️" Adaptar trend. Audio trending + texto en pantalla.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">🗳 Poll: ¿qué quieres el Día del Niño?</div><div class="story-desc-s" contenteditable="true">"El 30 es Día del Niño — ¿cuál combo te antoja para celebrar?" Poll entre 2 opciones del menú. Genera anticipación y pedidos para esa fecha.</div></div>
+        </div>
+      </div>
+
+      <!-- VIE 25 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Viernes 25 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🍔 Viernes = merecido</div><div class="story-desc-s" contenteditable="true">"Sobreviviste la semana. Ya sabes cómo festejar 🍔🔥" + foto del combo + WhatsApp y Uber Eats. Copy que conecta con el cansancio del viernes.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">🛵 Finde sin salir — pide delivery</div><div class="story-desc-s" contenteditable="true">"¿Plan de quedarte en casa este finde? Nosotros llegamos a ti 🛵 Uber Eats o WhatsApp." Screenshot de Uber Eats o foto de pedido en puerta.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">📦 Pedido real del viernes</div><div class="story-desc-s" contenteditable="true">Foto de pedido listo para entrega. "Este ya va en camino — ¿el tuyo?" + número de WhatsApp. Autenticidad sobre producción.</div></div>
+        </div>
+      </div>
+
+      <!-- SAB 26 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Sábado 26 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">💬 ¿Cuál es tu salsa favorita?</div><div class="story-desc-s" contenteditable="true">"Dinos cuál es tu go-to 👇" Sticker de pregunta abierta. El top 3 de respuestas se comparte el lunes siguiente. Genera contenido futuro.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">📱 Trend del sábado — versión Botanitas</div><div class="story-desc-s" contenteditable="true">El formato viral de ese fin de semana adaptado. Comida protagonista, texto corto, audio trending. Sábado = más tiempo de pantalla, mejor engagement.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">🍗 Cena de sábado resuelta</div><div class="story-desc-s" contenteditable="true">"¿Qué cenan hoy? Nosotros tenemos la respuesta 🍗🍔" + foto del platillo estrella del finde + WhatsApp y Uber Eats. Horario clave para decisiones de cena.</div></div>
+        </div>
+      </div>
+
+      <!-- LUN 28 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Lunes 28 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del lunes — última semana del mes</div><div class="story-desc-s" contenteditable="true">"Último lunes de abril y lo cerramos con todo 🔥 [platillo] a [precio] — hoy en local, WhatsApp y Uber Eats." Video con reveal del precio al final.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">🏆 Top 3 salsas del mes — según ustedes</div><div class="story-desc-s" contenteditable="true">"El fin de semana nos dijeron cuál es su favorita — aquí están las ganadoras del mes 🏆" + las 3 salsas más mencionadas del poll del sábado 26.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">👀 Teaser Día del Niño — cuenta regresiva</div><div class="story-desc-s" contenteditable="true">"En 2 días algo muy especial 👧 No te lo vas a creer" Sticker de countdown hasta el 30 de abril. Expectativa máxima antes del video.</div></div>
+        </div>
+      </div>
+
+      <!-- MAR 29 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Martes 29 de abril</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🔥 Promo del martes — penúltimo día del mes</div><div class="story-desc-s" contenteditable="true">"Martes de [platillo] a [precio] — última promo del martes en abril 😤 No te quedes sin el tuyo." Urgencia real de fin de mes.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">2:00pm</div><div class="story-title-s" contenteditable="true">💬 ¿Cuántos años tienes y qué pides en Botanitas?</div><div class="story-desc-s" contenteditable="true">"Dinos tu edad y tu orden favorita 👇 Queremos conocer a nuestra familia Botanitas" Sticker de pregunta. Genera comunidad y contenido para responder.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">7:00pm</div><div class="story-title-s" contenteditable="true">🎈 Mañana es Día del Niño — ¿ya tienes plan?</div><div class="story-desc-s" contenteditable="true">"Mañana celebramos algo muy especial 🎉 Síguenos para no perderte nada 👀" + foto de la comida. Último teaser antes del video de la hija.</div></div>
+        </div>
+      </div>
+
+      <!-- MIE 30 -->
+      <div class="day-stories">
+        <div class="day-label" contenteditable="true">Miércoles 30 de abril — ¡DÍA DEL NIÑO! 🎈</div>
+        <div class="story-items">
+          <div class="story-item"><div class="story-num">1</div><div class="story-time" contenteditable="true">12:00pm</div><div class="story-title-s" contenteditable="true">🎈 Día del Niño — comparte el reel especial</div><div class="story-desc-s" contenteditable="true">"¡Feliz Día del Niño! 🎈 Hoy publicamos algo muy especial — checa nuestro feed ahora mismo 👀" + repost del reel de la hija. Publicar justo después del reel.</div></div>
+          <div class="story-item"><div class="story-num">2</div><div class="story-time" contenteditable="true">3:00pm</div><div class="story-title-s" contenteditable="true">❤️ ¿Ya viste el video? ¿Qué te pareció?</div><div class="story-desc-s" contenteditable="true">"¿Ya lo viste? 😂❤️ Cuéntanos qué te pareció" Sticker de reacción emoji o pregunta abierta. Compartir el reel de nuevo. Maximizar el alcance.</div></div>
+          <div class="story-item"><div class="story-num">3</div><div class="story-time" contenteditable="true">8:00pm</div><div class="story-title-s" contenteditable="true">🎉 Pedidos del Día del Niño en tiempo real</div><div class="story-desc-s" contenteditable="true">"¿Celebraron con Botanitas hoy? 🎉 Los pedidos no pararon — ¿fue el tuyo uno de estos?" + foto de pedido. Cerrar el mes con prueba social y emoción.</div></div>
+        </div>
+      </div>
+
+    </div><!-- end stories-section -->
+  </div>
+  </div>
+
+  <!-- VIDEO HIJA -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">07 · Video especial — La hija de Botanitas al rescate</div>
+    <div class="hija-card">
+      <div class="hija-header">
+        <div class="hija-header-title" contenteditable="true">🧒 El video más importante del mes</div>
+        <div class="hija-header-sub" contenteditable="true">30 de abril · Día del Niño · Alto potencial de viralidad</div>
+      </div>
+      <div class="hija-body">
+        <div class="hija-row"><div class="hija-label" contenteditable="true">Fecha</div><div class="hija-val" contenteditable="true">30 de abril (o 28 si se quiere anticipar alcance)</div></div>
+        <div class="hija-row"><div class="hija-label" contenteditable="true">Duración</div><div class="hija-val" contenteditable="true">30–45 segundos. Si se alarga, cortar.</div></div>
+        <div class="hija-row"><div class="hija-label" contenteditable="true">Locación</div><div class="hija-val" contenteditable="true">En el local, con comida real en la mesa o mostrador.</div></div>
+        <div class="hija-row"><div class="hija-label" contenteditable="true">Historia</div><div class="hija-val" contenteditable="true">Le quisieron cobrar millones de pesos por un video review, y la hija dice "no te preocupes mamá, yo te ayudo" y da su reseña genuina del restaurante.</div></div>
+        <div class="hija-row"><div class="hija-label" contenteditable="true">Guión</div><div class="hija-val" contenteditable="true">
+          1. "Le quisieron cobrar a mi mamá muchos millones de pesos por hacer un video review de su restaurante..."<br>
+          2. "Y yo le dije: no te preocupes mamá, yo te ayudo."<br>
+          3. Habla de su comida favorita, las salsas que le gustan, por qué recomienda ir.<br>
+          4. Mamá aparece, la abraza. Número de WhatsApp en pantalla. Texto: "Feliz Día del Niño 🎉"
+        </div></div>
+        <div class="hija-row"><div class="hija-label" contenteditable="true">Clave del éxito</div><div class="hija-val" contenteditable="true">No ensayar demasiado. La naturalidad de una niña hablando de la comida de su mamá es exactamente lo que lo hace irresistible. Si se equivoca, mejor todavía.</div></div>
+        <div class="hija-row"><div class="hija-label" contenteditable="true">CTA final</div><div class="hija-val" contenteditable="true">Número de WhatsApp + logo Uber Eats + "visítanos en Apodaca"</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉTRICAS -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">08 · Métricas semanales</div>
+    <p class="body-text" contenteditable="true">Solo 3 métricas. Al final de cada semana, revisar estos números únicamente:</p>
+    <div class="metricas-grid">
+      <div class="metrica-card"><div class="metrica-icon">💬</div><div><div class="metrica-title" contenteditable="true">Mensajes WhatsApp</div><div class="metrica-desc" contenteditable="true">Cuántos mensajes nuevos llegaron. Es el indicador más directo de conversión.</div></div></div>
+      <div class="metrica-card"><div class="metrica-icon">🛵</div><div><div class="metrica-title" contenteditable="true">Pedidos Uber Eats</div><div class="metrica-desc" contenteditable="true">Si subió el número de pedidos en la app esa semana vs la anterior.</div></div></div>
+      <div class="metrica-card"><div class="metrica-icon">🔖</div><div><div class="metrica-title" contenteditable="true">Guardados por post</div><div class="metrica-desc" contenteditable="true">Más importantes que los likes. Indican intención de compra futura.</div></div></div>
+    </div>
+  </div>
+
+  <!-- REGLAS -->
+  <div class="section">
+    <div class="section-title" contenteditable="true">09 · Reglas que no se rompen</div>
+    <div class="reglas-grid">
+      <div class="regla"><div class="regla-title" contenteditable="true">3 destinos, siempre visibles</div><div class="regla-desc" contenteditable="true">Local, WhatsApp y Uber Eats en cada post y story. Si el cliente tiene que buscarlos, ya se fue.</div></div>
+      <div class="regla"><div class="regla-title" contenteditable="true">Un solo CTA por post</div><div class="regla-desc" contenteditable="true">Dos llamados a la acción = cero acción. Elegir uno y ser consistente.</div></div>
+      <div class="regla"><div class="regla-title" contenteditable="true">Stories: 12pm siempre primero</div><div class="regla-desc" contenteditable="true">La story de apertura a las 12pm todos los días sin falta. La consistencia vale más que la producción.</div></div>
+      <div class="regla"><div class="regla-title" contenteditable="true">Videos con ellos: máx 30 seg</div><div class="regla-desc" contenteditable="true">Natural, sin memorizar. Si se equivocan, se ríen y siguen. Eso conecta más.</div></div>
+      <div class="regla"><div class="regla-title" contenteditable="true">Reviews: subirlos al instante</div><div class="regla-desc" contenteditable="true">Cuando llega un review de Google, subirlo ese mismo día. No guardarlo para después.</div></div>
+      <div class="regla"><div class="regla-title" contenteditable="true">No compararse con la competencia</div><div class="regla-desc" contenteditable="true">Las salsas caseras son lo que nadie más tiene en Apodaca. Esa es la identidad que vende.</div></div>
+      <div class="regla"><div class="regla-title" contenteditable="true">Inspo ganador = formato de mayo</div><div class="regla-desc" contenteditable="true">El formato que genere más mensajes/visitas este mes se repite en mayo como base.</div></div>
+      <div class="regla"><div class="regla-title" contenteditable="true">El video de la hija: no sobreensayar</div><div class="regla-desc" contenteditable="true">La naturalidad es exactamente lo que lo hace funcionar. Máximo 2 tomas de práctica.</div></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p><strong>Botanitas Rocha</strong> · Plan de Marketing Digital · Abril 2025</p>
+  <p style="margin-top: 6px;">Apodaca, Nuevo León · Instagram + Facebook · Uber Eats · Llevan</p>
+</footer>
+</div><!-- end main-content -->
+
+
+<script>
+const STORAGE_KEY = 'botanitas_plan_v2';
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, document.getElementById('main-content').innerHTML);
+    const msg = document.getElementById('saved-msg');
+    msg.classList.add('show');
+    setTimeout(() => msg.classList.remove('show'), 2000);
+  } catch(e) {}
+}
+
+function loadState() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) document.getElementById('main-content').innerHTML = saved;
+  } catch(e) {}
+}
+
+function resetPage() {
+  if (confirm('¿Restablecer todo al contenido original? Se perderán los cambios.')) {
+    try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+    location.reload();
+  }
+}
+
+function downloadHTML() {
+  const clone = document.documentElement.cloneNode(true);
+  // Remove edit bar and contenteditable attrs from clone
+  const editBar = clone.querySelector('.edit-bar');
+  if (editBar) editBar.remove();
+  clone.querySelectorAll('[contenteditable]').forEach(el => el.removeAttribute('contenteditable'));
+  // Remove script
+  clone.querySelectorAll('script').forEach(s => s.remove());
+  const html = '<!DOCTYPE html>\n' + clone.outerHTML;
+  const blob = new Blob([html], {type: 'text/html'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'plan_botanitas_rocha_abril2025.html';
+  a.click();
+}
+
+// Auto-save on any edit
+document.addEventListener('input', () => {
+  clearTimeout(window._saveTimer);
+  window._saveTimer = setTimeout(saveState, 800);
+});
+
+// Load on start
+window.addEventListener('DOMContentLoaded', loadState);
+</script>
+
+</body>
+</html>
